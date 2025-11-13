@@ -130,8 +130,8 @@ Gli script usati per il training sono: “trainTaxiQLearning”, “resetEnv”,
 Vengono scelti i valori:
 	α = 0.1		(learning rate);
 	γ = 0.9		(discount factor);
-	ε = 0.1		(ε-greedy).
-	maxSteps = 50	(numero massimo di step per episodio)
+	ε = 0.1		(ε-greedy);
+	maxSteps = 50	(numero massimo di step per episodio).
   
 Inizialmente l’Environment viene inizializzato con la funzione “resetEnv.m”, che restituisce posizioni randomiche del taxi, passeggero e destinazione.
 
