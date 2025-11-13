@@ -6,8 +6,6 @@ Simulation and Training through Q-Learning for the Taxi Gridworld Environment
 Taxi Gridworld è un ambiente classico usato per sperimentare algoritmi di reinforcement learning, come Q-learning o SARSA. È una griglia semplificata in cui un taxi deve imparare a trasportare un passeggero da una posizione di partenza a una destinazione corretta, ottimizzando il percorso.
 Il taxi parte da una posizione casuale e deve imparare a prendere il passeggero e portarlo a destinazione nel minor numero di passi, evitando gli ostacoli posti sulla griglia.
 
-
- 
 ### Descrizione dell’ambiente ###
 Ambiente Griglia
 L'ambiente è modellato come una griglia 5×5, con celle numerate da 1 a 25. Ogni cella rappresenta una possibile posizione per il taxi.
@@ -26,7 +24,7 @@ Ogni stato è definito da una tripla:
 	Posizione del passeggero → 5. Composte da 4 posizioni fisse + 1 posizione speciale "a bordo" 
 	Posizione di destinazione → 4 fisse
 
-Stati totali=25×5×4=500
+Stati totali=25×5×4=500 (incluso il caso in cui la destinazione è uguale alla posizione del passeggero)
 
 # Possibili Azioni
 
