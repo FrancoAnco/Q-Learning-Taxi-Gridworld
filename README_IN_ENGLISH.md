@@ -91,7 +91,7 @@ It is an off-policy method that enables an agent to learn how to make optimal de
 The goal of Q-learning is to learn a function — called the Q-function or action-value function — that assigns to each state–action pair a value representing the expected return (future reward) achievable by following the best possible strategy from that pair onward.
 Its simplest form, known as one-step Q-learning, is defined by the following equation:
 
-Q(S_t,A_t )←Q(S_t,A_t )+ α[R_(t+1)+ γ max_a⁡〖Q(S_(t+1),a)- Q(S_t,A_t )〗]
+Q(S_t,A_t )←Q(S_t,A_t )+ α[R_(t+1)+ γ max_a⁡〖Q(S_(t+1),a)〗- Q(S_t,A_t )]
 
 where:
 	S_t = current state;
@@ -145,7 +145,7 @@ The next state and the obtained reward are computed through the `stepEnv.m` func
 
 The Q-value update follows:
 
-Q(S_t,A_t )←Q(S_t,A_t )+ α[R_(t+1)+ γ max_a⁡〖Q(S_(t+1),a)- Q(S_t,A_t )〗]
+Q(S_t,A_t )←Q(S_t,A_t )+ α[R_(t+1)+ γ max_a⁡〖Q(S_(t+1),a)〗- Q(S_t,A_t )]
 
 Each state (taxi, passenger, destination) is encoded into a single index using stateToIndex.m, which computes all possible combinations.
 
@@ -175,4 +175,6 @@ This work serves as a practical and educational example of Reinforcement Learnin
 ### References ###
 
 	https://gymnasium.farama.org/environments/toy_text/taxi/
+
+	
 	Sutton, R.S. and Barto, A.G., 2015. Reinforcement learning: An introduction. 2nd ed. (in progress). Cambridge, Massachusetts: A Bradford Book, The MIT Press.
