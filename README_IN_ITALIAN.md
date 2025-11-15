@@ -86,7 +86,7 @@ Q-learning è uno degli algoritmi più noti e utilizzati nel reinforcement learn
 
 L’obiettivo del Q-learning è apprendere una funzione, chiamata funzione Q o funzione di valore d’azione, che assegna a ogni coppia stato-azione un valore che rappresenta il ritorno atteso (ricompensa futura) ottenibile seguendo la migliore strategia possibile a partire da quella coppia. La sua forma più semplice, chiamata Q-learning a un passo (one-step Q-learning), è definita dalla seguente equazione:
 
-Q(S_t,A_t )←Q(S_t,A_t )+ α[R_(t+1)+ γ max_a⁡〖Q(S_(t+1),a)- Q(S_t,A_t )〗]
+Q(S_t,A_t )←Q(S_t,A_t )+ α[R_(t+1)+ γ max_a⁡〖Q(S_(t+1),a)〗- Q(S_t,A_t )]
 
 Dove:
 	S_t = stato attuale,
@@ -144,7 +144,7 @@ Si calcola il prossimo stato e la reward ottenuta, attraverso la funzione “ste
   
 Infine, viene trovato Q(S_t,A_t )  con la formula:
 
-Q(S_t,A_t )←Q(S_t,A_t )+ α[R_(t+1)+ γ max_a⁡〖Q(S_(t+1),a)- Q(S_t,A_t )〗]
+Q(S_t,A_t )←Q(S_t,A_t )+ α[R_(t+1)+ γ max_a⁡〖Q(S_(t+1),a)〗- Q(S_t,A_t )]
 
 Lo stato viene considerato come singolo numero, esso contiene posizione spaziale del taxi, del passeggero e della destinazione. Per trasformare questa terna in un singolo numero bisogna calcolare ogni possibile combinazione e numerarla. Per fare questo si usa la funzione “stateToIndex.m”.
 
@@ -166,5 +166,7 @@ Il lavoro svolto fornisce un esempio pratico e didattico dell’applicazione del
 ### Bibliografia ###
 
 	https://gymnasium.farama.org/environments/toy_text/taxi/
+
+	
 	Sutton, R.S. and Barto, A.G., 2015. Reinforcement learning: An introduction. 2nd ed. (in progress). Cambridge, Massachusetts: A Bradford Book, The MIT Press.
 
