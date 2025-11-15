@@ -172,9 +172,10 @@ Results show that, after sufficient training episodes, the agent successfully le
 
 This work serves as a practical and educational example of Reinforcement Learning in a discrete environment and can be extended to more complex or realistic scenarios.
 
-### References ###
+### Website ###
 
 	https://gymnasium.farama.org/environments/toy_text/taxi/
 
+## Book
 	
 	Sutton, R.S. and Barto, A.G., 2015. Reinforcement learning: An introduction. 2nd ed. (in progress). Cambridge, Massachusetts: A Bradford Book, The MIT Press.
