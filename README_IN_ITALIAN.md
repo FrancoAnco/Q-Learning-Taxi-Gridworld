@@ -163,7 +163,7 @@ Particolare attenzione è stata dedicata alla modellazione della funzione di rew
 L’intero sistema è stato realizzato in MATLAB, organizzando il codice in moduli separati per favorire chiarezza e modularità. I risultati ottenuti hanno dimostrato che, dopo un numero sufficiente di episodi, l’agente riesce ad apprendere un comportamento ottimale, navigando con efficienza nella griglia anche in presenza di ostacoli.
 Il lavoro svolto fornisce un esempio pratico e didattico dell’applicazione del Reinforcement Learning a un ambiente discreto, e rappresenta un punto di partenza per lo studio di tecniche più avanzate o per l’estensione dell’ambiente a scenari più complessi.
 
-### Sito ###
+### Sito web ###
 
 	https://gymnasium.farama.org/environments/toy_text/taxi/
 
